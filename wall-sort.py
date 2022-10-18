@@ -7,7 +7,8 @@ import argparse
 parser = argparse.ArgumentParser()
 parser.add_argument("path", help="path to wallpapers folder", nargs='?', default='.') 
 # add recursive option
-parser.add_argument("-r", "--recursive", help="recursively sort wallpapers in subfolders", action="store_true")
+parser.add_argument("-r", "--recursive", help="search for wallpapers in subfolders", action="store_true")
+# add option to sort wallpapers by brightness 
 args = parser.parse_args()
 
 # import the necessary packages
