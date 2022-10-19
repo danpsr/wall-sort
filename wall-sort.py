@@ -4,7 +4,6 @@
 # argument parser to get the path to the wallpapers folder
 # if no path is given, the current directory is used
 import argparse
-from http.client import SWITCHING_PROTOCOLS
 parser = argparse.ArgumentParser()
 parser.add_argument("path", help="path to wallpapers folder", nargs='?', default='.')
 # add recursive option
